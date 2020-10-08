@@ -45,12 +45,14 @@
 }
 
 .grid-item{
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .grid-item img{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   height: auto;
-  width: 50%;
+  width: 70%;
 }
 
 * {box-sizing:border-box}
