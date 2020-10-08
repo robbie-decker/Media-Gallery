@@ -39,6 +39,20 @@
   color: white;
 }
 
+.grid-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-item{
+  display: flex;
+  justify-content: center;
+}
+.grid-item img{
+  height: auto;
+  width: 50%;
+}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
