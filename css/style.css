@@ -17,7 +17,8 @@ p{
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background: rgb(145,230,143);
+  background: linear-gradient(90deg, rgba(145,230,143,1) 0%, rgba(164,118,219,1) 72%, rgba(0,0,0,1) 100%);
   position: relative;
   margin: 0 0 1em 0;
 }
@@ -53,7 +54,7 @@ p{
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #4CAF50;
+  background-color: #a476db;
   color: white;
 }
 
@@ -75,72 +76,90 @@ p{
   background-position: center center;
   background-repeat: no-repeat;
 }
+/* #space{
+  background-image: url("../images/2001.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+} */
+.one:hover{opacity: 0.7;}
 .two{
   background-image: url("../images/birdman.still135_0.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.two:hover{opacity: 0.7;}
 .three{
   background-image: url("../images/fight-club-final-shot.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.three:hover{opacity: 0.7;}
 .four{
   background-image: url("../images/Ghost_Shell_1995.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.four:hover{opacity: 0.7;}
 .five{
   background-image: url("../images/inception.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.five:hover{opacity: 0.7;}
 .six{
   background-image: url("../images/interstellar.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.six:hover{opacity: 0.7;}
 .seven{
   background-image: url("../images/moonlight.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.seven:hover{opacity: 0.7;}
 .eight{
   background-image: url("../images/my-neighbor-totoro-hayao-miyazaki.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.eight:hover{opacity: 0.7;}
 .nine{
   background-image: url("../images/pixar-up-final-shot.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.nine:hover{opacity: 0.7;}
 .ten{
   background-image: url("../images/roma-beach.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.ten:hover{opacity: 0.7;}
 .eleven{
   background-image: url("../images/the-breakfast-club-final-shot.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.eleven:hover{opacity: 0.7;}
 .twelve{
   background-image: url("../images/thelma-and-louise-ending.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+.twelve:hover{opacity: 0.7;}
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -218,7 +237,7 @@ p{
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #A476DB;
 }
 
 /* Fading animation */
@@ -227,6 +246,76 @@ p{
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+.modal {
+  visibility: hidden;
+  position: absolute;
+  top: 70vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 70vw;
+  max-width: 2010px;
+  height: auto;
+  background: rgba(252, 252, 252,.7);
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: 2em auto 1em auto;
+  display: block;
+  /* position: absolute; */
+  /* top: 45em; */
+  width: 80%;
+  max-width: 2000px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: none;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
 
 @-webkit-keyframes fade {

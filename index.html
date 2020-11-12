@@ -9,12 +9,12 @@
     </head>
     <body>
         <div class="topnav">
-            <a href="#home" class="active">Logo</a>
+            <a href="#home" class="active">Home</a>
             <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a href="#news">More Movies</a>
+                <a href="#contact">More Pictures</a>
+                <a href="#about">Contact</a>
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -34,7 +34,7 @@
 
          <div class="mySlides fade">
            <div class="numbertext">2 / 3</div>
-           <img src="images/la-la-land-1.jpg" style="width:100%">
+           <img src="images/la-la-land-1.jpg" style="width:100% ; height:120%">
            <div class="text">La La Land</div>
          </div>
 
@@ -58,54 +58,65 @@
         </div>
         <div class="grid-container">
           <div>
-            <div class="grid-item one"></div>
+            <div class="grid-item one" id="space"></div>
             <p>2001 Space Odyssey</p>
+          </div>
+          <div>
+            <div class="grid-item two" id="bird"></div>
+            <p>Birdman</p>
+          </div>
+          <div>
+            <div class="grid-item three" id="fight"></div>
+            <p>Fight Club</p>
+          </div>
+          <div>
+            <div class="grid-item four" id="ghost"></div>
+            <p>Ghost in the Shell</p>
+          </div>
+          <div>
+            <div class="grid-item five" id="incept"></div>
+            <p>Inception</p>
+          </div>
+          <div>
+            <div class="grid-item six" id="inter"></div>
+            <p>Interstellar</p>
+          </div>
+          <div>
+            <div class="grid-item seven" id="moon"></div>
+            <p>Moonlight</p>
+          </div>
+          <div>
+            <div class="grid-item eight" id="totoro"></div>
+            <p>My Friend Totoro</p>
+          </div>
+          <div>
+            <div class="grid-item nine" id="up"></div>
+            <p>Up</p>
+          </div>
+          <div>
+            <div class="grid-item ten" id="roma"></div>
+            <p>Roma</p>
+          </div>
+          <div>
+            <div class="grid-item eleven" id="breakfast"></div>
+            <p>The Breakfast Club</p>
+          </div>
+          <div>
+            <div class="grid-item twelve"id="thelma"></div>
+            <p>Thelma and Louise</p>
+          </div>
         </div>
-        <div>
-          <div class="grid-item two"></div>
-          <p>Birdman</p>
-        </div>
-        <div>
-          <div class="grid-item three"></div>
-          <p>Fight Club</p>
-        </div>
-        <div>
-          <div class="grid-item four"></div>
-          <p>Ghost in the Shell</p>
-        </div>
-        <div>
-          <div class="grid-item five"></div>
-          <p>Inception</p>
-        </div>
-        <div>
-          <div class="grid-item six"></div>
-          <p>Interstellar</p>
-        </div>
-        <div>
-          <div class="grid-item seven"></div>
-          <p>Moonlight</p>
-        </div>
-        <div>
-          <div class="grid-item eight"></div>
-          <p>My Friend Totoro</p>
-        </div>
-        <div>
-          <div class="grid-item nine"></div>
-          <p>Up</p>
-        </div>
-        <div>
-          <div class="grid-item ten"></div>
-          <p>Roma</p>
-        </div>
-        <div>
-          <div class="grid-item eleven"></div>
-          <p>The Breakfast Club</p>
-        </div>
-        <div>
-          <div class="grid-item twelve"></div>
-          <p>Thelma and Louise</p>
-        </div>
-        </div>
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+    </div>
         <script src="javascript/page.js"> </script>
     </body>
 </html>
